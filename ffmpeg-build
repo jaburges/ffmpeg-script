@@ -562,12 +562,12 @@ download "https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.bz2"
 ./configure "${CONFIGURE_OPTIONS[@]}" \
     --extra-version='0york0~18.04' \
     --toolchain=hardened \
-	--disable-debug \
-	--disable-doc \
+    --disable-debug \
+    --disable-doc \
     --enable-libass \
     --enable-libfdk-aac \
     --enable-libfreetype \
-    --enable-libsvtav1 \
+#   --enable-libsvtav1 \
     --enable-libvorbis \
     --enable-libvpx \
     --enable-gnutls \
@@ -576,9 +576,9 @@ download "https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.bz2"
     --enable-libopus \
     --enable-opencl \
     --enable-libxcb \
-	--enable-shared \
-	--enable-gpl \
-	--enable-nonfree \
+    --enable-shared \
+    --enable-gpl \
+    --enable-nonfree \
     --enable-lv2 \
     --enable-cuda \
     --enable-cuvid \

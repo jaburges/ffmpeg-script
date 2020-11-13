@@ -585,16 +585,16 @@ download "https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.bz2"
     --enable-nvenc \
     --enable-libx264 \
     --enable-libx265 \
-	--enable-pthreads \
-	--enable-static \
-	--enable-version3 \
+    --enable-pthreads \
+    --enable-static \
+    --enable-version3 \
     --extra-cflags="-I$HOME/ffmpeg_build/include -I/usr/local/cuda/include" \
     --extra-ldflags="-L$HOME/ffmpeg_build/lib -L/usr/local/cuda/lib64" \
-	--libdir="/usr/lib/x86_64-linux-gnu" \
-	--extra-libs="${EXTRALIBS}" \
-	--pkgconfigdir="$WORKSPACE/lib/pkgconfig" \
-	--pkg-config-flags="--static" \
-	--prefix="${WORKSPACE}"
+    --libdir="/usr/lib/x86_64-linux-gnu" \
+    --extra-libs="${EXTRALIBS}" \
+    --pkgconfigdir="$WORKSPACE/lib/pkgconfig" \
+    --pkg-config-flags="--static" \
+    --prefix="${WORKSPACE}"
 
 execute make -j $MJOBS
 execute make install
